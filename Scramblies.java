@@ -27,6 +27,6 @@ public class Scramblies {
         System.out.println(scramble("cedewaraaossoqqyt","codewars")); // true
         System.out.println(scramble("katas","steak")); // false
         System.out.println(scramble("scriptjavx","javascript")); // false
-        System.out.println(scramble("samoc","commas")); // false
+        System.out.println(scramble("samoc","commas")); // false        
     }
 }
