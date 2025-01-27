@@ -4,6 +4,7 @@ public class Scramblies {
 
     public static boolean scramble(String str1, String str2) { 
         if (str1.length() < str2.length()) return false;    //Verificar que la longitud de str1 sea mayor o igual a la de str2
+        if (str2.length() > str1.length()) return false;
             
         HashMap<Character, Integer> disponibles = new HashMap<>();    //Contar repeticiones en str1
         for (char c: str1.toCharArray()) {
@@ -26,7 +27,6 @@ public class Scramblies {
         System.out.println(scramble("cedewaraaossoqqyt","codewars")); // true
         System.out.println(scramble("katas","steak")); // false
         System.out.println(scramble("scriptjavx","javascript")); // false
-        System.out.println(scramble("samoc","commas")); // false
-        System.out.println("Cambio en la copia en remoto");
+        System.out.println(scramble("samoc","commas")); // false        
     }
 }
